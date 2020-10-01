@@ -19,11 +19,11 @@ Concepts
 ----
 
 * Templates: HTML templates are style files for your website. They are
-  incomplete HTML files with placeholders for content, partials and other stuff.
+  incomplete HTML files with placeholders for content, partials and other stuffs.
     - File extension: `.template` or `.blog_template`.
     - Place content: `{{content}}`.
     - Place partials: `{{partial: partial_name}}`.
-* Partials: Contents that are common to many pages, for example sidebars, menus.
+* Partials: Contents that are common to many pages, for example : sidebars, menus and etc.
 * Metadata: Key-Value pairs (nesting is allowed) of strings.
   Including global metadata and per-page metadata. User defined metadata are allowed. For example:
     - `build_time`: Time the build script run.
@@ -47,7 +47,7 @@ To use SwBuilder, install the following dependencies first:
   * multimarkdown: Markdown rendering.
   * uglifyjs, cleancss: JS/CSS minification.
 
-Not all the dependencies are required, it depends on what feature you use.
+Not all the dependencies are required, it depends on what features you will use.
 
 ### Getting Started
 
@@ -107,7 +107,7 @@ For example a html file:
     <!-- Use {{js: path}} to include Javascript -->
     <script type="text/javascript" src="{{js: script.js}}"></script>
 
-Use `<!--{ yaml contents }-->` to define YAML metadata for the page, it can be referred from the page or the templates.
+Use `<!--{ yaml contents }-->` to define YAML metadata for the page, it can be referred from the pages or the templates.
 
 If your website is not directly under a domain, it's difficult to reference pages from a template.
 Static Website Builder provides a useful `{{ref: path}}` directive, as well as `{{js: path}}`, they will be replaced with
